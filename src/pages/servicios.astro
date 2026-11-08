@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TarjetaServicio from '../components/TarjetaServicio.astro';
+---
+
+<Layout title="Servicios | Mi Web Astro" description="Diseño web, desarrollo y marketing digital en Albacete">
+	<main>
+		<h1>Nuestros Servicios</h1>
+		<p>Todo lo que necesitas para tu presencia digital.</p>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+			<TarjetaServicio
+				icono="🎨"
+				titulo="Diseño Web"
+				descripcion="Creamos webs modernas, rápidas y optimizadas para convertir visitas en clientes."
+			/>
+			<TarjetaServicio
+				icono="📈"
+				titulo="Marketing Digital"
+				descripcion="Estrategias SEO, SEM y redes sociales para hacer crecer tu negocio online."
+			/>
+			<TarjetaServicio
+				icono="⚡"
+				titulo="Desarrollo a Medida"
+				descripcion="Soluciones técnicas personalizadas para los retos específicos de tu empresa."
+			/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	h1 {
+		color: #111827;
+		margin-bottom: 0.5rem;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+</style>

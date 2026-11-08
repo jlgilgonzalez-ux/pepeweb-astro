@@ -1,0 +1,9 @@
+---
+const { titulo, descripcion, icono } = Astro.props;
+---
+
+<div class="bg-white rounded-xl p-8 shadow-sm hover:-translate-y-1 transition-transform duration-200">
+	<span class="text-4xl">{icono}</span>
+	<h2 class="text-xl font-semibold text-gray-900 mt-4 mb-2">{titulo}</h2>
+	<p class="text-gray-500 leading-relaxed">{descripcion}</p>
+</div>
