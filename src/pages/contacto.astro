@@ -7,7 +7,8 @@ import Layout from '../layouts/Layout.astro';
 		<h1>Contacto</h1>
 		<p>¿Tienes un proyecto en mente? Escríbenos.</p>
 
-		<form>
+		<form name="contacto" method="POST" data-netlify="true">
+	<input type="hidden" name="form-name" value="contacto" />
 			<div class="campo">
 				<label for="nombre">Nombre</label>
 				<input type="text" id="nombre" placeholder="Tu nombre" />
